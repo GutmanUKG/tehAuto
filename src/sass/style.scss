@@ -9,6 +9,9 @@
 @import "components/footer";
 @import "components/jobs";
 @import "components/vacancies";
+.position_relative{
+  position: relative;
+}
 *{
   padding: 0;
   margin: 0;

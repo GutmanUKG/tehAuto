@@ -21,6 +21,25 @@ h5{
   font-weight: 500;
   font-family: "Petra Sans",sans-serif;
 }
+h6.title_section{
+  font-size: 18px;
+  font-family: 'Petra Sans',sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  &:after{
+    content: '';
+    display: block;
+    background: #FDB757;
+    width: 213px;
+    height: 5px;
+  }
+}
 span{
   font-weight: 500;
   font-size: 18px;
