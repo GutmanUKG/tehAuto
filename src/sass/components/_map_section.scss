@@ -1,0 +1,40 @@
+.section_map{
+  position: relative;
+  margin-bottom: 67px;
+  .wrapper{
+      background: url("../../img/map.png") center no-repeat;
+      padding-top: 147px;
+      padding-bottom: 85px;
+      padding-left: 109px;
+      box-sizing: border-box;
+    .txt{
+      background: #FFFFFF;
+      padding: 35px 52px 28px 44px;
+      box-sizing: border-box;
+      max-width: 932px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      &_inner{
+        background: transparent;
+      }
+      h1{
+        margin-bottom: 10px;
+      }
+      .sub_title{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+    .blue_bg{
+      width: 811px;
+      height: 280px;
+      position: absolute;
+      left: 0;
+      background: #211D74;
+      z-index: 0;
+      top: 17%;
+    }
+  }
+}

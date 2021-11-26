@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.min.css">
+
+    <script src="js/scripts.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="wrapper wrapper_flex">
+            <div class="logo">
+                <a href="#">
+                    <object data="./img/logo.svg" type="">
+
+                    </object>
+                </a>
+            </div>
+            <div class="main_menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#" class="active">
+                                Главная
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./inner.html">
+                                Услуги
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#fot">
+                                Личный кабинет
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Контакты
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                О нас
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="call_center">
+                   <span>
+                       Callcenter :
+                   </span>
+                <a href="#">
+                    +7 700 900 77 77
+                </a>
+                <div class="search_btn">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="section_banner">
+    <div class="container">
+        <img src="./img/banner.png" alt="">
+    </div>
+</section>
+<section class="section_vacancies">
+    <div class="container_inner">
+        <h2>
+            Стань частью нашей динамичной команды.
+        </h2>
+
+        <div class="wrapper_filter">
+            <select class="city selector" id="city">
+                <option value="all">Все</option>
+                <option value="Almaty">Алматы</option>
+                <option value="Ust-Kamenogorsk">Усть-Каменогорск</option>
+            </select>
+            <select class="job selector" id="job">
+                <option value="all">Все</option>
+                <option value="Менеджеры отдела продаж">Менеджер по продажам</option>
+                <option value="Водитель">Водитель</option>
+            </select>
+            <input type="text" class="search_section" placeholder="Найти" id="search_job">
+        </div>
+
+        <div class="list_result">
+            <div class="item" data-city="Almaty">
+                <h5>
+                    Менеджеры отдела продаж
+                </h5>
+                <button class="btn btn_gold">
+                    Подробнее
+                </button>
+            </div>
+
+            <div class="item" data-city="Ust-Kamenogorsk">
+                <h5>
+                    Менеджеры отдела продаж Ука
+                </h5>
+                <button class="btn btn_gold">
+                    Подробнее
+                </button>
+            </div>
+            <div class="item" data-city="Ust-Kamenogorsk">
+                <h5>
+                  Водитель фуры
+                </h5>
+                <button class="btn btn_gold">
+                    Подробнее
+                </button>
+            </div>
+            <div class="item" data-city="Ust-Kamenogorsk">
+                <h5>
+                    Водитель погрузчика
+                </h5>
+                <button class="btn btn_gold">
+                    Подробнее
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="fot">
+    <div class="container">
+        <div class="wrapper wrapper_flex">
+            <div class="footer_logo">
+                <a href="#">
+                    <img src="./img/footer_logo.png" alt="">
+                </a>
+            </div>
+            <div class="descr">
+                ПЕРЕГОН И ПЕРЕВОЗКА ТЕХНИКИ ИЗ КИТАЯ В КАЗАХСТАН И СНГ
+            </div>
+            <div class="phone_section">
+                <a href="#">
+                    +7 700 900 77 77
+                </a>
+
+                <a href="">
+                    8 7232 91 95 18
+                </a>
+
+                <a href="#">
+                    +7 931 009 30 07
+                </a>
+            </div>
+
+            <div class="social">
+                <a href="#">
+                    <img src="./img/what's_app.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/inst.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/face.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/you.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

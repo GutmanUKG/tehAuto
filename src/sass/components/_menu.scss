@@ -1,0 +1,21 @@
+.main_menu{
+  ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    li{
+      a{
+        font-family: "Inter",sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: #646464;
+        transition: 0.5s all;
+        padding-bottom: 11px;
+        border-bottom: 2px solid transparent;
+      }
+      .active{
+        border-bottom: 2px solid #FDB757;
+      }
+    }
+  }
+}
