@@ -1,3 +1,5 @@
+//Использован сборщик пакетов gulp прошу в случае правок не добавлять в копиленный файл свой код, лучше создайте свой и подлючите =)
+
 @import "components/buttons";
 @import "components/forms";
 @import "components/text";
@@ -17,6 +19,7 @@
   padding: 0;
   margin: 0;
   outline: none;
+  box-sizing: border-box;
 }
 body{
   font-family: 'Petra Sans',sans-serif;

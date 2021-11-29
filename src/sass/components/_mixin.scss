@@ -2,3 +2,12 @@
   margin-top: 67px;
   margin-bottom: 37px;
 }
+
+@mixin title_h1_small{
+  font-size: 54px;
+  line-height: 54px;
+}
+@mixin h2_small{
+  font-size: 32px;
+  line-height: 36px;
+}

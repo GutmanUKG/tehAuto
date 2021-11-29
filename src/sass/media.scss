@@ -1,0 +1,86 @@
+@import 'components/mixin';
+@media(max-width: 1440px){
+
+}
+
+@media(max-width: 1280px){
+  .wrapper{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+  header{
+    .wrapper_flex{
+      .logo{
+        max-width: 200px;
+      }
+
+      .main_menu{
+        ul{
+          gap: 2rem;
+        }
+      }
+    }
+  }
+
+  footer{
+    .wrapper_flex{
+      justify-content: normal;
+      gap: 1rem;
+      .phone_section{
+        flex-wrap: wrap;
+      }
+      .social{
+        a{
+          width: 25px;
+        }
+      }
+      .phone_section{
+        gap: .5rem;
+        a{
+          &:after{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1279px) {
+  header{
+    .wrapper_flex{
+      justify-content: normal;
+      flex-wrap: nowrap;
+      gap: .5rem;
+      .main_menu{
+        ul{
+          gap: 0.5rem;
+        }
+
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1024px){
+  h1{
+   @include title_h1_small;
+  }
+  h2{
+    @include h2_small;
+  }
+  .item_title{
+    @include h2_small;
+  }
+  .section_map{
+    .wrapper{
+      padding-left: 1rem;
+      .txt{
+        max-width: 840px;
+
+      }
+    }
+  }
+}
