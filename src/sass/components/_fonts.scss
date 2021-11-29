@@ -1,31 +1,48 @@
 @font-face {
   font-family: "Petra Sans";
-  src: url("../../fonts/PetraSans-Regular.ttf") format('ttf');
+  src: url("../../fonts/petra-sans.regular.ttf") format('ttf'),
+  url("../../fonts/petra-sans.regular.woff") format('woff'),
+  url("../../fonts/petra-sans.regular.woff2") format('woff2');
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Petra Sans";
+  src: url("../../fonts/petra-sans.light.ttf") format('ttf'),
+  url("../../fonts/petra-sans.light.woff") format('woff'),
+  url("../../fonts/petra-sans.light.woff2") format('woff2');
   font-weight: 400;
 }
 @font-face {
   font-family: "Petra Sans";
-  src: url("../../fonts/PetraSans-Medium.ttf") format('ttf');
+  src: url("../../fonts/petra-sans.medium.ttf") format('ttf'),
+  url("../../fonts/petra-sans.medium.woff") format('woff'),
+  url("../../fonts/petra-sans.medium.woff2") format('woff2');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Petra Sans";
-  src: url("../../fonts/PetraSans-SemiBold.ttf") format('ttf');
+  src: url("../../fonts/petra-sans.semibold.ttf") format('ttf'),
+  url("../../fonts/petra-sans.semibold.woff") format('woff'),
+  url("../../fonts/petra-sans.semibold.woff2") format('woff2');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Petra Sans";
-  src: url("../../fonts/PetraSans-Bold.ttf") format('ttf');
+  src: url("../../fonts/petra-sans.bold.ttf") format('ttf'),
+  url("../../fonts/petra-sans.bold.woff") format('woff'),
+  url("../../fonts/petra-sans.bold.woff2") format('woff2');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Petra Sans";
-  src: url("../../fonts/PetraSans-ExtraBold.ttf") format('ttf');
+  src: url("../../fonts/petra-sans.extrabold.ttf") format('ttf'),
+  url("../../fonts/petra-sans.extrabold.woff") format('woff'),
+  url("../../fonts/petra-sans.extrabold.woff2") format('woff2');
   font-weight: 800;
   font-style: normal;
 }

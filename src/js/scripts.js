@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const citySelect = document.querySelector('#city');
     let wrapperAllElement = document.querySelector('.list_result'),
         arrElements = wrapperAllElement.querySelectorAll('.item');
+
     citySelect.addEventListener('change', (e)=>{
         for(let i = 0; i < arrElements.length; i++){
             if(arrElements[i].dataset.city != citySelect.value){
@@ -18,7 +19,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 //    jobs filter
     const jobSelect = document.querySelector('#job');
-
     jobSelect.addEventListener('change', ()=>{
        for(let i = 0; i < arrElements.length; i++){
            arrElements[i].classList.remove('disable');
@@ -31,13 +31,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
            if(jobSelect.value == 'all'){
                arrElements[i].classList.remove('disable');
            }
-           // toLowerCase(arrElements[i].innerText).indexOf(jobSelect)
        };
     });
 //    search
+//     console.log(arrElements);
     const search = document.querySelector('#search_job');
     search.addEventListener('input', ()=>{
         for(let i = 0; i < arrElements.length; i++){
+
             let resutl = arrElements[i].innerText.toLowerCase().indexOf(search.value.toLowerCase());
             if(resutl){
                 arrElements[i].classList.add('disable');
