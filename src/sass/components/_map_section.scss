@@ -17,6 +17,10 @@
       z-index: 1;
       &_inner{
         background: transparent;
+        .sub_title{
+          font-weight: 500 !important;
+          line-height: 25px;
+        }
       }
       h1{
         margin-bottom: 10px;
