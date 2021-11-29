@@ -39,7 +39,7 @@
       border: 1px solid #B4B4B4;
       padding: 23px 35px 23px 40px;
       box-sizing: border-box;
-      background: url("../../img/search_icon_input.png") left center no-repeat;
+      background: url("../img/search_icon_input.png") left center no-repeat;
       background-position-x: 15px;
     }
     .active{
@@ -122,7 +122,7 @@
     .btn_prev{
       width: 16px;
       height: 30px;
-      background: url("../../img/arrows_for_slider.png") no-repeat;
+      background: url("../img/arrows_for_slider.png") no-repeat;
       background-size: cover;
     }
     .btn_next{
@@ -174,7 +174,7 @@
     @include margin_for_title_section;
   }
   .icon{
-    background: url("../../img/icon_adv.png") no-repeat;
+    background: url("../img/icon_adv.png") no-repeat;
     width: 40px;
     height: 40px;
     background-size: contain;
