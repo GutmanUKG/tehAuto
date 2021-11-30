@@ -18,8 +18,13 @@
     box-sizing: border-box;
     display: flex;
     gap: 40px;
+    div{
+      display: flex;
+      gap: 40px;
+    }
     a,
     select{
+      min-width: 392px;
       font-weight: 500;
       font-size: 18px;
       color: #000000;

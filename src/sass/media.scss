@@ -4,6 +4,21 @@
 }
 
 @media(max-width: 1280px){
+  .section_map{
+    .container{
+      padding: 0;
+    }
+    .wrapper{
+      .txt_inner{
+        padding: 0;
+        max-width: 540px;
+      }
+    }
+  }
+  .container{
+    padding: 1rem;
+  }
+
   .wrapper{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -56,6 +71,12 @@
       .main_menu{
         ul{
           gap: 0.5rem;
+          li{
+            a{
+              white-space: nowrap !important;
+              letter-spacing: normal;
+            }
+          }
         }
 
       }
@@ -65,6 +86,13 @@
 }
 
 @media (max-width: 1024px){
+  header{
+    .wrapper_flex{
+     .logo{
+       max-width: 180px;
+     }
+    }
+  }
   h1{
    @include title_h1_small;
   }
@@ -79,7 +107,12 @@
       padding-left: 1rem;
       .txt{
         max-width: 840px;
-
+        &_inner{
+          max-width: 540px;
+          background: #FFFFFF;
+          padding: 2rem 1rem;
+          box-sizing: border-box;
+        }
       }
     }
   }
@@ -87,6 +120,20 @@
     .container{
       padding-left: 1rem;
       padding-right: 1rem;
+    }
+    .list_items_inner{
+      .imgs{
+        box-shadow: 0px -56px 39.9927px rgba(43, 54, 95, 0.2) !important;
+        img{
+          height: auto;
+          &:first-child{
+            height: auto !important;
+          }
+          &:last-child{
+            height: auto !important;
+          }
+        }
+      }
     }
   }
 }
@@ -118,6 +165,28 @@
 }
 
 @media (max-width: 959px){
+    .section_vacancies{
+      .wrapper_filter{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        div{
+          justify-content: space-between;
+          width: 100%;
+          flex-wrap: wrap;
+          select{
+            min-width: auto;
+          }
+        }
+      }
+    }
+
+  .adv{
+    .wrapper_items{
+      flex-wrap: wrap;
+    }
+  }
     .section_map{
       .wrapper{
         background-size: cover;
@@ -134,6 +203,16 @@
       justify-content: center;
       align-items: center;
       gap: 4rem;
+      &_inner{
+        .item{
+          .txt{
+            order: 1;
+          }
+          .imgs{
+            order: 0;
+          }
+        }
+      }
       .item{
         flex-direction: column;
         width: 100%;
@@ -177,12 +256,31 @@
       }
     }
   }
+  .section_city{
+    .wrapper_items{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
 }
 
 @media (max-width: 480px){
+  .section_vacancies{
+    .wrapper_filter{
+
+      div{
+        gap: 20px;
+        select{
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
   .section_map{
     .wrapper{
       .txt{
+        padding: 1rem;
         h1{
           @include title_h1_small_mobile
         }
@@ -223,6 +321,12 @@
           }
         }
       }
+    }
+  }
+  .adv{
+    .container_inner{
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   }
 }
