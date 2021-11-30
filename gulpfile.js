@@ -30,4 +30,7 @@ gulp.task('watch', function() {
     gulp.watch("src/sass/**/*.+(scss|sass)", gulp.parallel('styles'));
 })
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
+gulp.task('watch_js', ()=>{
+    gulp.watch('src/js/**/*').on('change',browserSync.reload);
+})
+gulp.task('default', gulp.parallel('watch', 'watch_js', 'server', 'styles'));

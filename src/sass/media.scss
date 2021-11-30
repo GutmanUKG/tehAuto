@@ -83,4 +83,140 @@
       }
     }
   }
+  .section_list_items{
+    .container{
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+@media (max-width: 1023px){
+  header{
+    .wrapper_flex{
+      .main_menu{
+        display: none;
+      }
+      .call_center{
+        display: none;
+      }
+    }
+
+  }
+  .section_map{
+    .wrapper{
+      .blue_bg{
+        display: none;
+      }
+      .txt{
+
+      }
+    }
+  }
+}
+
+@media (max-width: 959px){
+    .section_map{
+      .wrapper{
+        background-size: cover;
+        .txt{
+          max-width: 540px;
+          h1{
+            @include title_h1_mobile;
+          }
+        }
+      }
+    }
+  .section_list_items{
+    .list_items{
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      .item{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        &:nth-child(2n){
+          .txt{
+            order: 0;
+          }
+        }
+        .txt{
+          gap: 1rem;
+          h2{
+          @include title_h2_mobile;
+          }
+          .subtitle{
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+  footer{
+    height: max-content;
+    .wrapper_flex{
+      height: max-content;
+      flex-direction: column;
+      padding: 1rem;
+
+      .phone_section{
+        a{
+          display: flex;
+          &:after{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .section_map{
+    .wrapper{
+      .txt{
+        h1{
+          @include title_h1_small_mobile
+        }
+        .sub_title{
+          @include subtitles_small_mobile
+        }
+      }
+    }
+  }
+  .section_list_items{
+    .list_items{
+      .item{
+        .imgs{
+
+          img{
+            &:first-child{
+              height: auto;
+            }
+            &:nth-child(2){
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer{
+    .wrapper_flex{
+      .descr{
+        text-align: center;
+      }
+      .phone_section{
+        flex-direction: column;
+        a{
+          &:after{
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }

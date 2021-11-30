@@ -1,0 +1,109 @@
+header{
+  .burger_menu_btn{
+    position: fixed;
+    left: 90%;
+    cursor: pointer;
+    z-index: 2;
+    &_active{
+      z-index: 201;
+
+      div{
+        border-radius: 3px;
+        &:after{
+          width: 15px !important;
+          left: 0 !important;
+          transform: rotate(45deg);
+        }
+        &:before{
+          width: 15px !important;
+          transform: rotate(-45deg);
+
+        }
+      }
+    }
+
+    div{
+      display: block;
+      position: relative;
+      width: 20px;
+      height: 3px;
+      background: #15134b;
+      cursor: pointer;
+      transition: 0.5s all;
+      z-index: 0;
+      &:before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 3px;
+        background: #15134b;
+        position: absolute;
+        top: -6px;
+        z-index: -1;
+        cursor: pointer;
+        transition: 0.5s all;
+      }
+      &:after{
+        content: '';
+        display: block;
+        width: 15px;
+        height: 3px;
+        right: 0;
+        background: #15134b;
+        position: absolute;
+        top: 6px;
+        z-index: -1;
+        cursor: pointer;
+        transition: 0.5s all;
+      }
+    }
+  }
+  .burger_menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+    background: #FFFFFF;
+    padding: 2rem;
+    display: none;
+    left: -200%;
+    transition: 0.5s all;
+    &_active{
+      transition: 0.5s all;
+      display: block;
+      left: 0;
+    }
+    .phone_number{
+      display: flex;
+      flex-direction: column;
+      font-family: 'Inter',sans-serif;
+      small{
+        color: #646464;
+        font-size: 12px;
+        margin-bottom: .5rem;
+      }
+      a{
+        margin-bottom: 1rem;
+        font-family: 'Inter',sans-serif;
+        color: #646464;
+        font-weight: 500;
+      }
+    }
+    ul{
+
+      li{
+        a{
+          font-family: 'Inter',sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          text-transform: uppercase;
+          color: #646464;
+          margin-bottom: 25px;
+          display: block;
+        }
+      }
+    }
+  }
+}
