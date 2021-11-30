@@ -133,13 +133,16 @@
     .list_items{
       justify-content: center;
       align-items: center;
-      gap: 2rem;
+      gap: 4rem;
       .item{
         flex-direction: column;
         width: 100%;
         justify-content: center;
         align-items: center;
-        gap: 3rem;
+        gap: 4rem;
+        .imgs{
+          box-shadow: none !important;
+        }
         &:nth-child(2n){
           .txt{
             order: 0;
