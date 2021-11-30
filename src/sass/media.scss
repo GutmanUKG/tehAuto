@@ -196,7 +196,8 @@
 
           img{
             &:first-child{
-              height: 450px;
+              height: 450px !important;
+              object-fit: contain;
             }
             &:nth-child(2){
               display: none;
