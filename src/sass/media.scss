@@ -281,6 +281,17 @@
         }
       }
     }
+    .list_result{
+
+      .item{
+        padding: 15px;
+
+        button{
+          max-width: 120px;
+          width: 100%;
+        }
+      }
+    }
   }
   .section_map{
     .wrapper{

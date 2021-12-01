@@ -12,12 +12,35 @@ button{
   justify-content: center;
   cursor: pointer;
   font-weight: 500;
+  transition: 0.5s all;
+  position: relative;
+  overflow: hidden;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    transition: 0.5s all;
+    left: -100%;
+    transform: translateX(-100%);
+    width: 100%;
+    height: 100%;
+  }
   &_orange{
     border: 1px solid #FDB757;
     width: 215px;
     height: 55px;
     box-sizing: border-box;
+    &:hover{
+      &:before{
+        left: 0;
+        transform: translateX(0%);
+        z-index: -1;
 
+      }
+    }
+    &:before{
+      background: #FDB757;
+    }
   }
   &_form_gold{
     color: #454545;
@@ -25,12 +48,22 @@ button{
     padding: 10px 35px;
     box-sizing: border-box;
     width: max-content;
+    border: 1px solid transparent;
+    &:hover{
+      background: transparent;
+      border: 1px solid #FDB757;
+    }
   }
   &_gold{
     background: #FDB757;
     border-radius: 5px;
     padding: 10px 28px;
     box-sizing: border-box;
+    border:1px solid transparent;
+    &:hover{
+      background: transparent;
+      border: 1px solid #FDB757;
+    }
   }
   &_bold{
     font-weight: bold;
