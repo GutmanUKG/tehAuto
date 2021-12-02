@@ -21,6 +21,10 @@
     div{
       display: flex;
       gap: 40px;
+      form{
+        display: flex;
+        gap: 40px;
+      }
     }
     a,
     select{
