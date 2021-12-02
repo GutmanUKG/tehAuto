@@ -177,6 +177,7 @@
         text-transform: uppercase;
         font-weight: 500;
       }
+
     }
   }
 }
@@ -210,6 +211,8 @@
       width: 100%;
       padding: 41px 30px;
       box-sizing: border-box;
+      min-height: 303px;
+      justify-content: space-between;
       .title{
         color: #211D74;
         text-transform: uppercase;

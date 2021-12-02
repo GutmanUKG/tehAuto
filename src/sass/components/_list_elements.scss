@@ -83,6 +83,7 @@
         .subtitle{
           margin-top: -3rem;
           color: #909090;
+          font-weight: 500;
         }
         p{
           line-height: 25px;
@@ -99,7 +100,7 @@
       .imgs{
         position: relative;
         background: rgba(196, 196, 196, 0.01);
-        box-shadow: 0px -12px 39.9927px rgba(43, 54, 95, 0.2);
+
         img{
           &:first-child{
             max-width: 450px;
@@ -107,6 +108,7 @@
             height: 454px;
             position: relative;
             z-index: 1;
+            box-shadow: 0px 19.9964px 39.9927px rgba(43, 54, 95, 0.2);
           }
           &:last-child{
             position: absolute;

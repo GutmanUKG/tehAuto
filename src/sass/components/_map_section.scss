@@ -15,9 +15,12 @@
       max-width: 932px;
       width: 100%;
       position: relative;
+      min-height: 303px;
       z-index: 1;
       &_inner{
         background: transparent;
+        height: auto;
+        min-height: auto;
         .sub_title{
           font-weight: 500 !important;
           line-height: 25px;
